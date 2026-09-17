@@ -111,7 +111,7 @@ pipeline {
 
                             echo "Service:"
                             kubectl get service test-service-app -n ${NAMESPACE}
-                        }
+                        """
                     }
                 }
             }
