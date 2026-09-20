@@ -16,7 +16,7 @@ pipeline {
         REPOSITORY_NAME = 'test-service-app'
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "registryplatform.powermindinc.com/test-service-app:${BUILD_NUMBER}"
-        NAMESPACE = ''
+        NAMESPACE = 'default'
     }
 
     stages {
