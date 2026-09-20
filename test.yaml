@@ -15,6 +15,9 @@ spec:
         app: test-service-app
 
     spec:
+      imagePullSecrets:
+        - name: docker-secret
+
       containers:
         - name: test-service-app
           image: registryplatform.powermindinc.com/test-service-app:latest
